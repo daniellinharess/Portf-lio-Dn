@@ -57,6 +57,10 @@ header .container {
     height: fit-content;
 }
 
+header .container img {
+    display: none;
+}
+
 header .container h1 {
     color: var(--green);
 }
@@ -81,6 +85,12 @@ nav img {
     padding-top: 43px;
 }
 
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav ul a {
     font-size: 20px;
     color: var(--green);
@@ -88,6 +98,94 @@ nav ul a {
     margin: 0 25px;
 }
 
+nav ul a svg {
+    display: none;
+}
+
 section {
     height: 1500px;
+}
+
+/*RESPONSIVIDADE*/
+
+/*SMALL DESKTOP*/
+@media (max-width: 1000px) {
+    header .container {
+        width: 100%;
+    }
+
+    nav ul a {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 0 40px;
+}
+
+}
+
+/*TABLET*/
+@media (max-width: 767px) {
+   header .container {
+    width: 100%;
+    margin-bottom: 70px;
+   }
+
+   nav {
+    padding:  0 30px;
+   }
+
+   nav img {
+    display: none;
+   }
+
+   nav ul {
+    padding: 0;
+   }
+
+   nav ul a {
+    font-size: 16px;
+   }
+
+   header .container img {
+    display: inline;
+    width: 200px;
+   }
+}
+
+/*CELULAR*/
+@media (max-width: 480px) {
+   header .container {
+    padding: 0 40px;
+   }
+
+   nav {
+    padding: 15px;
+   }
+
+   nav ul a {
+    font-size: 12px;
+    margin: auto;
+   }
+
+   nav ul a svg {
+    display: block;
+    margin: 0 auto 10px;
+   }
+}
+
+@media (max-width: 300px) {
+    nav ul a {
+        font-size: 10px;
+    }
+
+    header .container {
+        font-size: 12px;
+        margin: 0 auto 5px;
+    }
+
+    header .container img {
+     display: none;
+}
+
 }
