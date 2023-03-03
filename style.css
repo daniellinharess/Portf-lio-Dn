@@ -45,6 +45,14 @@ button {
     font-weight: bold;
 }
 
+.title-purple {
+    color: var(--purple);
+}
+
+.title-green {
+    color: var(--green);
+}
+
 header {
     height:calc(100vh - var(--menu-height));
     display: flex;
@@ -59,10 +67,6 @@ header .container {
 
 header .container img {
     display: none;
-}
-
-header .container h1 {
-    color: var(--green);
 }
 
 header .container button {
@@ -102,11 +106,52 @@ nav ul a svg {
     display: none;
 }
 
-section {
-    height: 1500px;
+.about-me {
+    display: flex;
+    padding: 100px;
 }
 
-/*RESPONSIVIDADE*/
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img {
+    width: 55%;
+    padding-top: 55px;
+    height: 100%;
+}
+
+.about-me .img-container .line-purple {
+    width: calc(10% + 55%);
+    height: calc(40% + 55%);
+    border: 1px solid var(--purple);
+
+    position: absolute;
+    top: 35px;
+    right: 94px;
+
+}
+
+.about-me .img-container .line-green {
+    border: 1px solid var(--green);
+    transform: rotate(-3.3deg);
+
+    width: calc(10% + 55%);
+    height: calc(40% + 55%);
+    position: absolute;
+    top: 35px;
+    right: 94px;
+
+}
+
+    /*RESPONSIVIDADE*/
 
 /*SMALL DESKTOP*/
 @media (max-width: 1000px) {
